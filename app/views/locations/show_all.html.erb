@@ -1,0 +1,20 @@
+<table>
+  <thead>
+    <tr>
+      <th>ThreeSquare-Austin's Best Locations</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @locations.each do |location| %>
+      <tr>
+        <td><%= location.title %></td>
+        <td><%= link_to 'Show', location %></td>
+        <td><%= link_to 'Edit', edit_location(location) %></td>
+<!--         <td><%= link_to 'delete', video, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+ -->      </tr>
+    <% end %>
+  </tbody>
+</table>
